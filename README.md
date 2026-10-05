@@ -1,214 +1,232 @@
 <h1 align="center">🎂 Little Gift for My Dishu</h1>
 
 <p align="center">
-  <strong>A tiny birthday surprise, made with a lot of love.</strong>
-  <br>
-  An animated, interactive birthday webpage created specially for Dishu.
+  A tiny birthday surprise, made with a lot of love. ❤️
 </p>
 
 <p align="center">
-  <a href="https://github.com/Hidden-Rhythm/little-gift-for-my-dishu">
-    <img src="https://img.shields.io/badge/💻%20SOURCE-GitHub-18181B?style=for-the-badge&logo=github" alt="Source Code">
+  <a href="https://little-gift-for-my-dishu.vercel.app/">
+    <strong>✨ Open the Live Website</strong>
   </a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Hidden-Rhythm/little-gift-for-my-dishu">
+    View Source
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=white" alt="GSAP">
 </p>
 
+<br>
+
+## 💌 The Idea
+
+**Little Gift for My Dishu** is a small interactive birthday website built as a personal digital surprise.
+
+Instead of being a simple birthday card, it turns the message into a short animated experience — starting with a greeting, moving through a story, and ending with a personalized birthday wish.
+
+Everything is designed around one idea:
+
+> **make something small that feels personal.**
+
 ---
 
-<h2 align="center">💌 The Idea</h2>
+## ✨ Features
 
-<p align="center">
-  This isn't just a birthday webpage.<br>
-  It's a small animated story made for one person.
-</p>
-
-<p align="center">
-  <strong>From a simple "Huii Dishu" → to a whole little birthday surprise.</strong>
-</p>
-
----
-
-## ✨ What's Inside
-
-|     | Feature                |                                                        |
-| --- | ---------------------- | ------------------------------------------------------ |
-| 🎂  | **Birthday Intro**     | Opens with a personalized greeting                     |
-| 💬  | **Animated Messages**  | Messages appear one after another                      |
-| ⌨️  | **Chat-style Section** | Birthday message with character-by-character animation |
-| 💭  | **Story Sequence**     | A series of animated thoughts and messages             |
-| 💖  | **Personal Message**   | A custom message written specifically for Dishu        |
-| 🖼️ | **Personal Image**     | Uses a custom image from the `img` directory           |
-| 🎈  | **Floating Balloons**  | Animated SVG balloons                                  |
-| 🎩  | **Birthday Hat**       | Animated birthday hat element                          |
-| 🎉  | **Birthday Animation** | GSAP-powered celebration sequence                      |
-| 🔁  | **Replay**             | Restart the entire animation at the end                |
-| ⚙️  | **Easy Customization** | Main text can be changed through `customize.json`      |
+| Feature               | Description                                       |
+| --------------------- | ------------------------------------------------- |
+| 🎂 Birthday Intro     | Personalized birthday opening sequence            |
+| 💬 Animated Messages  | Messages appear through a scripted animation      |
+| 💭 Chat-style Section | A playful conversation-style birthday message     |
+| 📖 Story Sequence     | Multiple messages presented as an animated story  |
+| ❤️ Personal Message   | A dedicated heartfelt section                     |
+| 🖼️ Personal Image    | Custom image displayed during the final sequence  |
+| 🎈 Floating Balloons  | Animated birthday balloons                        |
+| 🎩 Birthday Hat       | Animated SVG birthday hat                         |
+| 🎉 Birthday Animation | Large animated birthday greeting                  |
+| 🔄 Replay             | Watch the entire experience again                 |
+| ⚙️ Easy Customization | Main text can be changed through `customize.json` |
 
 ---
 
 ## 🎬 How It Works
 
 ```text
-                 ┌─────────────────────┐
-                 │      index.html     │
-                 │    Birthday Page     │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │    customize.json   │
-                 │  Personal Messages  │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-                 ┌─────────────────────┐
-                 │      main.js        │
-                 │   GSAP Animation     │
-                 └──────────┬──────────┘
-                            │
-              ┌─────────────┼─────────────┐
-              ▼             ▼             ▼
-         💬 Messages     🎈 Balloons    🎂 Birthday
-              │             │             │
-              └─────────────┼─────────────┘
-                            ▼
-                    💖 Final Surprise
+             ┌─────────────────┐
+             │   Open Website  │
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │ Birthday Intro  │
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │ Animated Chat   │
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │   Story Flow    │
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │ Personal Message│
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │ 🎈 Birthday End │
+             └────────┬────────┘
+                      │
+                      ▼
+             ┌─────────────────┐
+             │      Replay     │
+             └─────────────────┘
 ```
 
 ---
 
-## 🪄 Animation Sequence
+## 🎞️ Animation Sequence
 
-The page runs through a scripted GSAP timeline:
+The experience is driven by a GSAP timeline.
+
+The animation roughly follows:
 
 ```text
 Greeting
    ↓
+Name
+   ↓
 Birthday Message
    ↓
-Chat-style Message
+Chat Box
    ↓
-"I wanted to do something special"
+Animated Conversation
+   ↓
+Story Messages
+   ↓
+"Special"
    ↓
 Personal Message
    ↓
-"S O"
+S / O Animation
    ↓
-🎈 Balloons
+Balloons
    ↓
-🖼️ Dishu's Picture
+Personal Image
    ↓
-🎂 Happy Birthday
+Birthday Hat
    ↓
-✨ Final Message
+Happy Birthday
    ↓
-🔁 Replay
+Final Wish
+   ↓
+Outro
+   ↓
+Replay
 ```
 
-The animation is controlled from `script/main.js` using GSAP's timeline and staggered animations.
+Each stage is controlled through the JavaScript animation timeline rather than requiring multiple pages.
 
 ---
 
 ## 🛠️ Built With
 
-| Technology          | Purpose                                   |
-| ------------------- | ----------------------------------------- |
-| 🌐 **HTML5**        | Page structure                            |
-| 🎨 **CSS3**         | Layout, typography and animations styling |
-| ⚡ **JavaScript**    | Personalization and animation logic       |
-| 🟢 **GSAP**         | Main animation timeline                   |
-| ✍️ **Patrick Hand** | Handwritten-style typography              |
-| 🖼️ **SVG / PNG**   | Balloons, hat, profile image and favicon  |
+| Technology       | Purpose                               |
+| ---------------- | ------------------------------------- |
+| **HTML5**        | Page structure                        |
+| **CSS3**         | Layout, typography and visual styling |
+| **JavaScript**   | Content loading and interaction       |
+| **GSAP**         | Animation timeline                    |
+| **Patrick Hand** | Handwritten typography                |
+| **SVG**          | Decorative birthday elements          |
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 little-gift-for-my-dishu/
 │
-├── index.html
-├── customize.json
-├── LICENSE
+├── 📄 index.html
+├── 📄 customize.json
+├── 📄 LICENSE
 │
-├── img/
-│   ├── ballon1.svg
-│   ├── ballon2.svg
-│   ├── ballon3.svg
-│   ├── dishu.png
-│   ├── favicon.png
-│   └── hat.svg
-│
-├── script/
+├── 📁 script/
 │   └── main.js
 │
-└── style/
-    └── style.css
+├── 📁 style/
+│   └── style.css
+│
+└── 📁 img/
+    ├── ballon1.svg
+    ├── ballon2.svg
+    ├── ballon3.svg
+    ├── dishu.png
+    ├── favicon.png
+    └── hat.svg
 ```
 
 ---
 
 ## ⚙️ Customization
 
-Most of the personal text is separated into:
+Most of the displayed text is separated from the animation logic inside:
 
 ```text
 customize.json
 ```
 
-You can change things such as:
+You can change values such as:
 
 ```json
 {
   "greeting": "Huii",
   "name": "Dishu",
-  "greetingText": "I don't like your sister btw 😝(jk)",
   "text1": "It's your birthday ˃ᴗ˂",
   "wishHeading": "Happy Birthday!"
 }
 ```
 
-The JavaScript automatically loads the values from `customize.json` and inserts them into the corresponding elements.
+The JavaScript automatically loads the configuration and inserts the values into the corresponding elements.
 
-### 🖼️ Change the Image
+This makes it possible to personalize the experience without rewriting the animation logic.
 
-Update:
+---
+
+## 🖼️ Changing the Image
+
+The displayed image can also be changed through `customize.json`.
 
 ```json
-"imagePath": "img/dishu.png"
+{
+  "imagePath": "img/dishu.png"
+}
 ```
 
-to point to another image inside the project.
+Place your image inside the `img/` directory and update the path accordingly.
 
 ---
 
 ## 🚀 Run Locally
 
-No build system or package installation is required.
-
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/Hidden-Rhythm/little-gift-for-my-dishu.git
 cd little-gift-for-my-dishu
 ```
 
-### 2. Open the page
+You can open `index.html` directly in a browser.
 
-You can simply open:
-
-```text
-index.html
-```
-
-in a browser.
-
-For a local server, any static HTTP server can be used.
-
-For example:
+For a local development server, you can also use Python:
 
 ```bash
 python -m http.server 8000
@@ -222,45 +240,30 @@ http://localhost:8000
 
 ---
 
-## 🔁 Replay
+## 🔄 Replay
 
-After the animation finishes, the final screen contains a replay option.
+At the end of the experience, the replay option restarts the GSAP timeline.
 
-Clicking it restarts the GSAP timeline from the beginning:
-
-```javascript
-tl.restart();
-```
-
-So the whole birthday sequence can be watched again without refreshing the page.
+No page reload is required — the animation simply starts again from the beginning.
 
 ---
 
-## 💝 Why This Exists
+## ❤️ Why This Exists
 
-Some gifts don't need a box.
+This isn't meant to be a huge project.
 
-Sometimes it's just:
+It's just a small corner of the internet made for someone special.
 
-```text
-a webpage
-+ a few silly messages
-+ some animations
-+ one picture
-+ way too much effort
-```
+A few animations, a few messages, a little bit of code — and hopefully a smile at the end.
 
-and somehow that's enough. :)
-
----
+<br>
 
 <p align="center">
-  <br>
-  <strong>🎂 Made for Dishu.</strong>
-  <br>
-  <sub>A little piece of code with a lot of meaning.</sub>
-  <br><br>
-  <a href="https://github.com/Hidden-Rhythm/little-gift-for-my-dishu">
-    💻 <strong>View Source</strong>
+  <strong>Made with ❤️ for Dishu.</strong>
+</p>
+
+<p align="center">
+  <a href="https://little-gift-for-my-dishu.vercel.app/">
+    ✨ <strong>Open the Gift</strong>
   </a>
 </p>
